@@ -1,0 +1,120 @@
+:root {
+    --main-color: #605c6f; 
+    --main-font: "Montserrat", sans-serif;
+    --banner-width: 33.33%;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+#page-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+label {
+    font-family: var(--main-font);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    margin-top: 2px;
+    width: 200px;
+    height: 24px;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(38, 112, 209);
+    box-shadow: 1px 3px 5px #cecece;
+    outline: none;
+}
+
+#banner {
+    background-color: rgb(193, 6, 6);
+    background-image: url("https://scontent.fwlg4-1.fna.fbcdn.net/v/t39.30808-6/306730877_512949167502544_4623473009557398966_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VNeZL6G2ML4Q7kNvgEZfFOy&_nc_ht=scontent.fwlg4-1.fna&oh=00_AYCJVYxpTQ_KKRclT_Gjq1UPbFU-AwWIBrZPRRPoS6XAkQ&oe=66AF9632");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: var(--banner-width);
+    display: flex;
+    align-items: center;
+}
+
+    .logo-background {
+        height: 200px;
+        background-color:rgba(222, 222, 222, 0.4);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .logo {
+            justify-items: center;
+        }
+
+#content {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.info {
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 400px;
+    margin: 40px;
+}
+
+h2 {
+    font-family: var(--main-font);
+}
+
+#form-container {
+    background-color:white;
+    padding-left: 40px;
+    height: 320px;
+    width: 100%;
+    box-shadow: 2px 5px 7px #cecece; 
+}
+
+.sign-up {
+    max-width: 450px;
+}
+
+.input-container {
+    
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    max-width: 450px;
+}
+
+.input-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 170px;
+    height: 40px;
+    border: 0px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: rgb(241, 241, 241);
+    border-radius: 5px;
+    background-color: rgb(193, 6, 6);
+    margin: 40px;
+    box-shadow: 1px 3px 5px #cecece;;
+}
